@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var one = window.prompt("enter 1st integer");
+      one = Number(one);
+      while (one || !one) {
+        while (one < 1) {
+          alert("please enter a positive integer");
+          one = window.prompt("enter 1st integer");
+          one = Number(one);
+          if (one > 0) {
+            break;
+          }
+        }
+        while (!Number.isInteger(one)) {
+          alert("please enter a positive integer");
+          one = window.prompt("enter 1st integer");
+          one = Number(one);
+          if (Number.isInteger(one)) {
+            break;
+          }
+        }
+        if (Number.isInteger(one) && one > 0) {
+          break;
+        }
+      }
+
+      var two = window.prompt("enter 2nd integer");
+      two = Number(two);
+      while (two || !two) {
+        while (!Number.isInteger(two)) {
+          alert("please enter a positive integer");
+          two = window.prompt("enter 2nd integer");
+          two = Number(two);
+          if (Number.isInteger(two)) {
+            break;
+          }
+        }
+        while (two < 1) {
+          alert("please enter a positive integer");
+          two = window.prompt("enter 2nd integer");
+          two = Number(two);
+          if (two > 0) {
+            break;
+          }
+        }
+        if (Number.isInteger(two) && two > 0) {
+          break;
+        }
+      }
+
+      var three = window.prompt("enter 3rd integer");
+      three = Number(three);
+      while (three || !three) {
+        while (!Number.isInteger(three)) {
+          alert("please enter a positive integer");
+          three = window.prompt("enter 3rd integer");
+          three = Number(three);
+          if (Number.isInteger(three)) {
+            break;
+          }
+        }
+        while (three < 1) {
+          alert("please enter a positive integer");
+          three = window.prompt("enter 3rd integer");
+          three = Number(three);
+          if (three > 0) {
+            break;
+          }
+        }
+        if (Number.isInteger(three) && three > 0) {
+          break;
+        }
+      }
+
+      var four = window.prompt("enter 4th integer");
+      four = Number(four);
+      while (four || !four) {
+        while (!Number.isInteger(four)) {
+          alert("please enter a positive integer");
+          four = window.prompt("enter 4th integer");
+          four = Number(four);
+          if (Number.isInteger(four)) {
+            break;
+          }
+        }
+        while (four < 1) {
+          alert("please enter a positive integer");
+          four = window.prompt("enter 4th integer");
+          four = Number(four);
+          if (four > 0) {
+            break;
+          }
+        }
+        if (Number.isInteger(four) && four > 0) {
+          break;
+        }
+      }
+
+      var five = window.prompt("enter 5th integer");
+      five = Number(five);
+      while (five || !five) {
+        while (!Number.isInteger(five)) {
+          alert("please enter a positive integer");
+          five = window.prompt("enter 5th integer");
+          five = Number(five);
+          if (Number.isInteger(five)) {
+            break;
+          }
+        }
+        while (five < 1) {
+          alert("please enter a positive integer");
+          five = window.prompt("enter 5th integer");
+          five = Number(five);
+          if (five > 0) {
+            break;
+          }
+        }
+        if (Number.isInteger(five) && five > 0) {
+          break;
+        }
+      }
+
+      // declaration of array called 'posNums'
+      const posNums = [one, two, three, four, five];
+
+      // initialization of variable called 'sum'
+      var sum = 0;
+
+      // iterating over the 'posNums' array
+      posNums.map((num) => {
+        // adding all the numbers in the 'posNums' array together and storing it in the 'sum' variable
+        sum += num;
+      });
+
+      // printing the sum of the positive numbers in the 'posNums' array to the console
+      console.log(`sum of ${posNums} is: `, sum);
+    </script>
+  </body>
+</html>
